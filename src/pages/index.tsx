@@ -63,8 +63,8 @@ const Home: NextPage<Props> = (props) => {
             <p>
               Follow me on&nbsp;
               <a className={styles.social__link} href="https://twitter.com/cherthedev">Twitter</a>,
-              &nbsp;or&nbsp;
-              <a className={styles.social__link} href="https://medium.com/@cherp">Medium</a>.
+              &nbsp;
+              <a className={styles.social__link} href="https://medium.com/@cherp">Medium</a>,
               &nbsp;or&nbsp;
               <a className={styles.social__link} href="https://github.com/cherscarlett">Github</a>.
               Reach me at&nbsp;
