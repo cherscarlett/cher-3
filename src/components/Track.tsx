@@ -28,12 +28,12 @@ interface Props {
 const Tracks: FunctionComponent<Props> = ({track}) => {
   const {name, id} = track
   const artists = track.artists.map(artist => artist.name).join(', ')
-  const image = track.album.images[2]
+  const image = track.album.images[1]
 
   return (
     <div className={styles.track}>
         <a className={styles.track__link} href={`https://open.spotify.com/track/${id}`}>
-            <img src={image.url} width='100%' />
+            <img src={image.url} width='100%' alt={`Album artwork for ${name} from Spotiy`} />
             <div className={styles.track__metadata}>
                 <span className={styles.track__metadata__text}>{ artists }</span>
                 <span className={styles.track__metadata__text}>{ name }</span>
@@ -45,3 +45,7 @@ const Tracks: FunctionComponent<Props> = ({track}) => {
 }
 
 export default Tracks
+
+export const config = {
+    runtime: 'experimental-edge',
+}

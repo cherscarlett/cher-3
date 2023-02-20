@@ -45,6 +45,7 @@ interface Props {
   tracks: TrackType[]
 }
 
+
 const Home: NextPage<Props> = (props) => {
   const {home: content, tracks} = props
 
@@ -61,7 +62,9 @@ const Home: NextPage<Props> = (props) => {
             { content.paragraphs?.map((paragraph: string, index) => (<p key={index}>{ paragraph }</p>)) }
             <p>
               Follow me on&nbsp;
-              <a className={styles.social__link} href="https://twitter.com/cherthedev">Twitter</a>
+              <a className={styles.social__link} href="https://twitter.com/cherthedev">Twitter</a>,
+              &nbsp;or&nbsp;
+              <a className={styles.social__link} href="https://medium.com/@cherp">Medium</a>.
               &nbsp;or&nbsp;
               <a className={styles.social__link} href="https://github.com/cherscarlett">Github</a>.
               Reach me at&nbsp;
@@ -80,3 +83,7 @@ const Home: NextPage<Props> = (props) => {
 }
 
 export default Home
+
+// export const config = {
+//   runtime: 'experimental-edge',
+// }
