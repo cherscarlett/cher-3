@@ -7,6 +7,9 @@ const Nav: FunctionComponent = () => (
       <Link href="/">
         <a className={styles.nav__link}>cher.dev</a>
       </Link>
+      <Link className={styles.navLink} href="/writing">
+        <a className={styles.nav__link}>Writing</a>
+      </Link>
       <Link className={styles.navLink} href="/resume">
         <a className={styles.nav__link}>Resume</a>
       </Link>

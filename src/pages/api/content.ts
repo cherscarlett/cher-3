@@ -20,6 +20,10 @@ export const fun = {
     ]
 }
 
+export const writing = {
+    heading: 'Published works',
+}
+
 export type Content = {
     heading: string,
     subHeading?: string,
