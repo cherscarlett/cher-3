@@ -52,7 +52,7 @@ const Home: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
-        <title>Cher Scarlett - Software Engineer</title>
+        <title>Cher Scarlett - Software Engineer & Memoirist</title>
       </Head>
       <Nav />
       {content && tracks ? (

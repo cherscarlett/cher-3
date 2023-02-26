@@ -27,7 +27,7 @@ const Resume: NextPage<Props> = (props) => {
   return (
     <>
       <Head>
-        <title>Cher Scarlett - Software Engineer - Resume</title>
+        <title>Cher Scarlett - Software Engineer & Memoirist - Resume</title>
       </Head>
       <Nav />
     { content && roles ? 
